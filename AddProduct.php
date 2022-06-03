@@ -99,7 +99,7 @@ $connect = mysqli_connect('3.132.234.157', 'duynh', '123@123a', 'toyworlddb');
 					move_uploaded_file($product_img_tmp, "Images/$product_img");
 
 					//Thêm sản phẩm vào cơ sở dữ liệu
-					$sql = "INSERT INTO product VALUES ('$product_id','$product_name','Images/$product_img','$product_detail','$product_price')";
+					$sql = "INSERT INTO product VALUES ('$product_id','$product_name','Images/$product_img','$product_price','$product_detail')";
 					$result = mysqli_query($connect,$sql);
 					if($result){
 						echo"<script>alert('New product added') </script>";
