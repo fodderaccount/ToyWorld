@@ -77,7 +77,7 @@
 	</table>
     </form>
     <?php 
-                $connect = mysqli_connect('localhost','root','','mydb');
+                $connect = mysqli_connect('3.132.234.157', 'duynh', '123@123a', 'toyworlddb');
 				if(!$connect){
 					echo "Connection failed";
 				}
